@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu vertical</title>
+    <style>
+        .menu {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            width: 500px;
+        }
+
+        .lista {
+            display: flex;
+            align-items: baseline;
+            flex-direction: row;
+            background-color: #beb9b9;
+            justify-content: space-around;
+            padding: 2px;
+            margin: 2px;
+        }
+
+        .item {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            width: 310px;
+            height: 60px;
+        }
+
+        .link {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            width: 100px;
+            height: 30px;
+        }
+
+        .link a {
+            text-decoration: none;
+        }
+
+
+    </style>
+</head>
+<body>
+
+<div class="menu">
+    <div class="lista">
+        <div class="item">INICIO</div>
+        <div class="link"><a href="https://www.w3schools.com/css/">ENTRAR</a></div>
+    </div>
+    <div class="lista">
+        <div class="item">ABOUT</div>
+        <div class="link"><a href="https://www.w3schools.com/css/css_syntax.asp">ENTRAR</a></div>
+
+    </div>
+    <div class="lista">
+        <div class="item">SERVICIOS</div>
+        <div class="link"><a href="https://www.w3schools.com/css/css_selectors.asp">ENTRAR</a></div>
+
+    </div>
+    <div class="lista">
+        <div class="item">CONTACTO</div>
+        <div class="link"><a href="https://www.w3schools.com/css/css_howto.asp">ENTRAR</a></div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

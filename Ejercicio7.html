@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Layout completo</title>
+    <style>
+        * {
+            border: 1px solid black
+        }
+
+        .todo {
+            width: 1000px; /*ancho de la pantalla*/
+            display: flex;
+            flex-direction: column;
+        }
+
+        .titulo {
+            width: 1000px;
+            background-color: #e06e7b;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+        .titulo1{
+            font-size: xx-large;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            padding: 30px 0px 20px 0px;
+
+        }
+        .subtitulo{
+            display: flex;
+            justify-content: center;
+            font-size: large;
+            padding: 0px 0px 30px 0px;
+        }
+
+
+        .menu {
+            display: flex;
+            flex-direction: row;
+
+
+
+            list-style: none; /*Quita los puntos del listado*/
+            background-color: #33ffbe;
+
+
+
+        }
+
+        .listado {
+            display: flex;
+            flex-direction: row;
+
+        }
+        .idiomas{
+            display: flex;
+            flex-direction: row;
+
+
+        }
+
+
+
+    </style>
+</head>
+<body>
+<div class="todo">
+    <header class="titulo">
+        <div class="titulo1">Mi pagina Flexbox</div>
+        <div class="subtitulo">Bienvenido a las paginas flexibles</div>
+    </header>
+    <menu>
+        <div class="menu">
+            <div class="listado">
+                <li>Inicio</li>
+                <li>Quienes somos</li>
+                <li>Servicios</li>
+                <li>Blog</li>
+                <li>Contacto</li>
+            </div>
+            <div class="idiomas">
+                <li>English</li>
+                <li>Euskera</li>
+            </div>
+        </div>
+    </menu>
+    <nav></nav>
+    <footer>ESto es el foot</footer>
+
+</div>
+</body>
+</html>

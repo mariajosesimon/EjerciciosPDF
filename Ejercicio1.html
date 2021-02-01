@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu horizontal</title>
+    <style>
+
+        /*CONTENEDOR PRINCIPAL */
+        .colocacion {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+
+            height: 100px;
+
+        }
+
+        /* 3 CONTENEDORES - IMAGEN, LISTADO, URLS QUE A SU VEZ SON ITEMS DEL CONTENEDOR PRINCIPAL
+        HE PUESTO FLEX-BASIS COMO PROPIEDAD ITEM
+
+        */
+        .imagen {
+            display: flex;
+            flex-basis: 110px;
+
+        }
+
+        .listado {
+            display: flex;
+            flex-basis: 800px;
+            justify-content: space-evenly;
+            align-items: center;
+
+        }
+
+
+        .urls {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 200px;
+        }
+
+        /*ITEMS DE LOS CONTENEDORES LISTADO Y URLS.*/
+
+        .url {
+            display: flex;
+            background-color: #beb9b9;
+            padding: 2px;
+            margin: 2px;
+            width: 55px;
+            height: 50px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .url a {
+            text-decoration: none;
+            color: white;
+        }
+
+    </style>
+
+</head>
+<body>
+<div class="colocacion">
+    <div class="imagen">
+        <img src="logo.JPG" alt="logo leon">
+    </div>
+    <div class="listado">
+        <div class="lista">INICIO</div>
+        <div class="lista">ABOUT</div>
+        <div class="lista">CONTACTO</div>
+        <div class="lista">SERVICIOS</div>
+    </div>
+    <div class="urls">
+        <div class="url"><a href="https://www.w3schools.com/css/">EN</a></div>
+        <div class="url"><a href="https://www.w3schools.com/html/default.asp">EUS</a></div>
+    </div>
+</div>
+</body>
+</html>

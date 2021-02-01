@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Centrar en pagina</title>
+    <style>
+
+        .contenedor {
+            height: 750px;
+            width: 750px;
+            border: 5px groove #5fff33;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-self: center;
+        }
+
+        .mensaje {
+
+            height: 150px;
+            width: 250px;
+            display: flex;
+            flex-direction: column;
+            border: 5px groove #ff334b;
+        }
+
+        .titulo {
+            display: flex;
+            align-self: flex-start;
+            font-weight: bold;
+            border: 5px groove #ffcc33;
+        }
+
+        .parrafo {
+            border: 5px groove #3366ff;
+        }
+
+
+    </style>
+</head>
+<body>
+
+<div class="contenedor">
+    <div class="mensaje">
+        <div class="titulo">I'm Centered!</div>
+        <div class="parrafo">
+            This box is both vertically and horizontally centered. Even if the text in this box changes to make. It
+            wider or taller, the box will still be centered. Go ahead, give it a try. Just click to edit the text.
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

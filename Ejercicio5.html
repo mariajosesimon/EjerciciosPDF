@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Layout de 3 columnas</title>
+    <style>
+
+
+        .header {
+            display: flex;
+            justify-content: center;
+            border: 5px groove #ff334b;
+            font-weight: bold;
+            font-size: x-large;
+        }
+
+
+
+
+
+        .foot{
+            display: flex;
+            justify-content: center;
+            border: 5px groove #ff334b;
+        }
+        .contenedor{
+            display: flex;
+            height: 100vh;
+            flex-direction: row;
+            justify-content: space-between;
+            border: 5px groove #ffdd33;
+        }
+
+        .navegacion{
+            flex-grow: 1;
+            border: 5px groove #33ffe7;
+
+        }
+        .articulo{
+            flex-grow: 2;
+            border: 5px groove #ffdd33;
+
+        }
+        .columna{
+            flex-grow: 1;
+            border: 5px groove #33ffbe;
+
+        }
+
+
+
+
+
+
+    </style>
+</head>
+<body >
+<header class="header">Bienvenido al Header</header>
+<main class="contenedor">
+    <nav class="navegacion">Nav</nav>
+    <article class="articulo">Article</article>
+
+    <aside class="columna">Aside</aside>
+
+</main>
+
+<footer class="foot">Footer
+</footer>
+</body>
+</html>
